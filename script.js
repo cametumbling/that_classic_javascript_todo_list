@@ -21,14 +21,14 @@ function createListElement() {
 
 //add the item when the button is clicked
 function addListItemAfterClick() {
-  if (inputLength > 0) {
+  if (inputLength() > 0) {
     createListElement();
   }
 }
 
 //add the item when Enter is pressed on the keyboard
-function addListItemAfterKeypress() {
-  if (inputLength > 0 && event.keyCode === 13) {
+function addListItemAfterKeypress(event) {
+  if (inputLength() > 0 && event.keyCode === 13) {
     createListElement();
   }
 }
@@ -49,7 +49,7 @@ button.addEventListener("click", function() {
 })
 
 //add list items when pressing Enter on keyboard
-input.addEventListener("keypress", function() {
+input.addEventListener("keypress", function(event) {    //same as above, but needs an event param
   if (input.value.length > 0 && event.keyCode === 13) { //same as above, but make sure only the Enter key (13) was pressed
     var li = document.createElement("li");
     li.appendChild(document.createTextNode(input.value));
