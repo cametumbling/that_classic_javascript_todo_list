@@ -1,8 +1,9 @@
 .coolTitle {
-  text-align: left;
+  display: inline-block;
+  margin: 10px;
   font-family: 'Oswald', Helvetica, sans-serif;
   font-size: 40px;
-  transform: skewY(-10deg);
+  transform: skewY(-7deg);
   letter-spacing: 4px;
   word-spacing: -8px;
   color: tomato;
