@@ -1,7 +1,7 @@
 .coolTitle {
   display: inline-block;
   margin: 10px;
-  font-family: 'Oswald', Helvetica, sans-serif;
+  font-family: 'Knewave', Helvetica, sans-serif;
   font-size: 40px;
   transform: skewY(-7deg);
   letter-spacing: 4px;
@@ -17,6 +17,11 @@
     -7px -7px 0 firebrick,
     -8px -8px 0 firebrick,
     -30px 20px 40px dimgrey;
+}
+
+
+body {
+  font-family: 'Knewave', Helvetica, sans-serif;
 }
 
 .done {
