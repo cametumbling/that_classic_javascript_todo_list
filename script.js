@@ -33,12 +33,17 @@ function inputLength() {
   return input.value.length;
 }
 
-//create the <li> DOM element with its text, add it to the <ul>, clear the input field
+//create the <li> DOM element with its text, add it to the <ul>, clear the input field, add a button next to the li (for delete)
 function createListElement() {
   var li = document.createElement("li");
   li.appendChild(document.createTextNode(input.value));
   ul.appendChild(li);
   input.value = "";
+
+  var deleteButton = document.createElement("button");
+  deleteButton.className = "deleteButton";
+  li.appendChild(deleteButton);
+  deleteButton.onclick = removeParent;
 }
 
 //add the item when the button is clicked
@@ -63,6 +68,11 @@ input.addEventListener("keypress", addListItemAfterKeypress);
 //toggle "Done" class on/off when clicking on item
 ul.onclick = function(event) {
   event.target.classList.toggle("done");
+}
+
+//function to make the delete button delete its accompanying <li>
+function removeParent(event) {
+  event.target.parentNode.remove();
 }
 
 
