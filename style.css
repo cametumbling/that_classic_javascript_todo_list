@@ -2,11 +2,6 @@ body {
   font-family: 'Knewave', Helvetica, sans-serif;
 }
 
-.delete {
-  color: #ff5bb0;
-  font-size: 12px;
-}
-
 .coolTitle {
   display: inline-block;
   margin: 10px;
@@ -33,7 +28,12 @@ body {
 }
 
 p.done {
-  font-size: 12px;
+  font-size: .7em;
+}
+
+.delete {
+  color: #ff5bb0;
+  font-size: .7em;
 }
 
 .deleteButton {
