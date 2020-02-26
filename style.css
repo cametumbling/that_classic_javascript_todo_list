@@ -1,3 +1,12 @@
+body {
+  font-family: 'Knewave', Helvetica, sans-serif;
+}
+
+h4 {
+  color: #ff5bb0;
+  opacity: 1;
+}
+
 .coolTitle {
   display: inline-block;
   margin: 10px;
@@ -19,11 +28,20 @@
     -30px 20px 40px dimgrey;
 }
 
-
-body {
-  font-family: 'Knewave', Helvetica, sans-serif;
-}
-
 .done {
   text-decoration: line-through;
+}
+
+.deleteButton {
+  display: inline-block;
+  position: absolute;
+  margin-left: 10px;
+  margin-top: 5px;
+  background:linear-gradient(to bottom, #ff5bb0 5%, #ef027d 100%);
+  background-color:#ff5bb0;
+  border-radius: 12px;
+  border:1px solid #ee1eb5;
+  cursor:pointer;
+  padding: 7px 7px;
+  text-decoration:none;
 }
